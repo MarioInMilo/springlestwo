@@ -17,7 +17,7 @@ public class User {
     private Integer id;
     @Column(name = "name")
     private String name;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "salary_id")
-    private Salary salary;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "salary_id")
+//    private Salary salary;
 }

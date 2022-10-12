@@ -4,6 +4,7 @@ package com.example.demo.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Getter
 @Setter
@@ -17,7 +18,5 @@ public class Salary {
     @Column(name = "id")
     private Integer id;
     @Column(name = "value")
-    private Double value;
-    @OneToOne(mappedBy = "salary", cascade = CascadeType.ALL)
-    private User user;
+    private BigDecimal value;
 }
